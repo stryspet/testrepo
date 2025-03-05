@@ -1,0 +1,26 @@
+Extreme IQ migration
+- stejná verze IQ, NAC a analytics  (doporučeno upgradovat všechny tři)
+
+
+
+- nový device přes konzoli
+  - nastavit proazatímní root, nastavit prozatímní ip adresu a heslo
+  
+- nový device SSH
+  - změnit root heslo a otestovat
+  - nastavit NTP servery  + zónu
+  - nastavit dns servery
+
+- spustit migrační script
+
+
+Po migraci shodit původní IQ , a nastavit původnéí adresu na nový 
+  shození   shutdown -h now
+  
+  na novém spustit dnatconfig script a změnit ip adresu
+
+  reboot (po změně adresy dát reboot)
+  
+  připojit se na webové rozhraní a ověřit
+
+  původní server nechat asi týden, pokud vše bude v pořádku tak smazat
